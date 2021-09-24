@@ -64,16 +64,13 @@ public class PlayerService {
         return sortedPlayers;
     }
     public Player createPlayer(Player player) {
-        if (
-            // Без значений
-                player.getName() == null
+        if (player.getName() == null
                         || player.getTitle() == null
                         || player.getRace() == null
                         || player.getProfession() == null
                         || player.getBirthday() == null
                         || player.getExperience() == null
 
-                        // Условия
                         || player.getTitle().length() > 30
                         || player.getName().length() > 12
                         || player.getName().equals("")
